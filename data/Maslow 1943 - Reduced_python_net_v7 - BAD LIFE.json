@@ -1,0 +1,1124 @@
+{
+    "style": [
+        {
+            "selector": "node",
+            "style": {
+                "label": "data(label)",
+                "text-valign": "center",
+                "text-halign": "center",
+                "font-size": "data(fontsize)",
+                "color": "data(textcolor)",
+                "height": "45px",
+                "width": "45px",
+                "background-color": "data(color)",
+                "background-opacity": "data(opacity)",
+                "text-wrap": "wrap",
+                "text-max-width": "45px"
+            }
+        },
+        {
+            "selector": ":parent",
+            "style": {
+                "text-valign": "top",
+                "text-halign": "center"
+            }
+        },
+        {
+            "selector": ".multiline-manual",
+            "style": {
+                "text-wrap": "wrap"
+            }
+        },
+        {
+            "selector": "edge",
+            "style": {
+                "curve-style": "bezier",
+                "target-arrow-shape": "triangle",
+                "line-color": "data(color)",
+                "target-arrow-color": "data(color)",
+                "width": "data(width)",
+                "line-style": "data(style)"
+            }
+        },
+        {
+            "selector": ".eh-handle",
+            "style": {
+                "background-color": "rgb(128,184,122)",
+                "width": "12px",
+                "height": "12px",
+                "shape": "ellipse",
+                "overlay-opacity": "0",
+                "border-width": "12px",
+                "border-opacity": "0"
+            }
+        },
+        {
+            "selector": ".eh-hover",
+            "style": {
+                "background-color": "rgb(128,184,122)"
+            }
+        },
+        {
+            "selector": ".eh-source",
+            "style": {
+                "border-width": "2px",
+                "border-color": "rgb(128,184,122)"
+            }
+        },
+        {
+            "selector": ".eh-target",
+            "style": {
+                "border-width": "2px",
+                "border-color": "rgb(128,184,122)"
+            }
+        },
+        {
+            "selector": ".eh-preview",
+            "style": {
+                "background-color": "rgb(157,170,189)",
+                "line-color": "rgb(157,170,189)",
+                "target-arrow-color": "rgb(157,170,189)",
+                "source-arrow-color": "rgb(157,170,189)",
+                "width": "4px"
+            }
+        },
+        {
+            "selector": ".eh-ghost-edge",
+            "style": {
+                "background-color": "rgb(157,170,189)",
+                "line-color": "rgb(157,170,189)",
+                "target-arrow-color": "rgb(157,170,189)",
+                "source-arrow-color": "rgb(157,170,189)",
+                "width": "4px"
+            }
+        }
+    ],
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 3.4934823091247673,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+        "x": 374.5977653631285,
+        "y": -47.33705772811925
+    },
+    "boxSelectionEnabled": false,
+    "renderer": {
+        "name": "canvas"
+    },
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "Hydration",
+                    "parent": "Physiological",
+                    "label": "Hydration",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 60
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Carbs",
+                    "parent": "Physiological",
+                    "label": "Carbs",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 110
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Protein",
+                    "parent": "Physiological",
+                    "label": "Protein",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 160
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Fat",
+                    "parent": "Physiological",
+                    "label": "Fat",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 210
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Job with Tenure",
+                    "parent": "Safety",
+                    "label": "Job with Tenure",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 300
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Savings Account",
+                    "parent": "Safety",
+                    "label": "Savings Account",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 350
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Insurance",
+                    "parent": "Safety",
+                    "label": "Insurance",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 400
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Physical Safety",
+                    "parent": "Safety",
+                    "label": "Physical Safety",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 450
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Giving Affection",
+                    "parent": "Love",
+                    "label": "Giving Affection",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 540
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Receiving Affection",
+                    "parent": "Love",
+                    "label": "Receiving Affection",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 590
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Belonging",
+                    "parent": "Love",
+                    "label": "Belonging",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 640
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Friendship",
+                    "parent": "Love",
+                    "label": "Friendship",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 690
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Acheivement",
+                    "parent": "Self-Esteem",
+                    "label": "Acheivement",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 780
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Confidence",
+                    "parent": "Self-Esteem",
+                    "label": "Confidence",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 830
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Freedom",
+                    "parent": "Self-Esteem",
+                    "label": "Freedom",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 880
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Reputation / Prestige",
+                    "parent": "Self-Esteem",
+                    "label": "Reputation / Prestige",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 930
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Attention",
+                    "parent": "Self-Esteem",
+                    "label": "Attention",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 980
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Creativity",
+                    "parent": "Self-Actualization",
+                    "label": "Creativity",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 1070
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Actualization",
+                    "parent": "Self-Actualization",
+                    "label": "Actualization",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 1120
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Physiological",
+                    "label": "Physiological",
+                    "fontsize": 15,
+                    "color": "rgb(65, 82, 101)",
+                    "opacity": "0.2",
+                    "textcolor": "rgb(30, 30, 30)"
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false
+            },
+            {
+                "data": {
+                    "id": "Safety",
+                    "label": "Safety",
+                    "fontsize": 15,
+                    "color": "rgb(65, 82, 101)",
+                    "opacity": "0.2",
+                    "textcolor": "rgb(30, 30, 30)"
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false
+            },
+            {
+                "data": {
+                    "id": "Love",
+                    "label": "Love",
+                    "fontsize": 15,
+                    "color": "rgb(65, 82, 101)",
+                    "opacity": "0.2",
+                    "textcolor": "rgb(30, 30, 30)"
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false
+            },
+            {
+                "data": {
+                    "id": "Self-Esteem",
+                    "label": "Self-Esteem",
+                    "fontsize": 15,
+                    "color": "rgb(65, 82, 101)",
+                    "opacity": "0.2",
+                    "textcolor": "rgb(30, 30, 30)"
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false
+            },
+            {
+                "data": {
+                    "id": "Self-Actualization",
+                    "label": "Self-Actualization",
+                    "fontsize": 15,
+                    "color": "rgb(65, 82, 101)",
+                    "opacity": "0.2",
+                    "textcolor": "rgb(30, 30, 30)"
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false
+            },
+            {
+                "data": {
+                    "id": "Catch Rain in Mouth",
+                    "label": "Catch Rain in Mouth",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 50
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Beg for Leftovers",
+                    "label": "Beg for Leftovers",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 100
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Roadkill",
+                    "label": "Roadkill",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 150
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Favors Owed",
+                    "label": "Favors Owed",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 200
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Tent",
+                    "label": "Tent",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 250
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Self-Defense",
+                    "label": "Self-Defense",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 300
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Drinking Alcohol",
+                    "label": "Drinking Alcohol",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 350
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Camping",
+                    "label": "Camping",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 400
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Unknown",
+                    "label": "Unknown",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 450
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            },
+            {
+                "data": {
+                    "id": "Dreaming",
+                    "label": "Dreaming",
+                    "fontsize": 8,
+                    "color": "rgb(41, 52, 64)",
+                    "opacity": "1",
+                    "textcolor": "rgb(200, 200, 200)"
+                },
+                "position": {
+                    "x": 210,
+                    "y": 500
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": "multiline-manual"
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "Hydration_Catch Rain in Mouth",
+                    "source": "Hydration",
+                    "target": "Catch Rain in Mouth",
+                    "color": "rgb(194, 109, 104)",
+                    "width": 2,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Carbs_Beg for Leftovers",
+                    "source": "Carbs",
+                    "target": "Beg for Leftovers",
+                    "color": "rgb(194, 109, 104)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Protein_Roadkill",
+                    "source": "Protein",
+                    "target": "Roadkill",
+                    "color": "rgb(150, 150, 150)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Fat_Roadkill",
+                    "source": "Fat",
+                    "target": "Roadkill",
+                    "color": "rgb(194, 109, 104)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Insurance_Favors Owed",
+                    "source": "Insurance",
+                    "target": "Favors Owed",
+                    "color": "rgb(150, 150, 150)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Physical Safety_Tent",
+                    "source": "Physical Safety",
+                    "target": "Tent",
+                    "color": "rgb(194, 109, 104)",
+                    "width": 4,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Physical Safety_Self-Defense",
+                    "source": "Physical Safety",
+                    "target": "Self-Defense",
+                    "color": "rgb(150, 150, 150)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Receiving Affection_Drinking Alcohol",
+                    "source": "Receiving Affection",
+                    "target": "Drinking Alcohol",
+                    "color": "rgb(194, 109, 104)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Belonging_Camping",
+                    "source": "Belonging",
+                    "target": "Camping",
+                    "color": "rgb(157, 170, 189)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Friendship_Camping",
+                    "source": "Friendship",
+                    "target": "Camping",
+                    "color": "rgb(157, 170, 189)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Freedom_Unknown",
+                    "source": "Freedom",
+                    "target": "Unknown",
+                    "color": "rgb(150, 150, 150)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "Creativity_Dreaming",
+                    "source": "Creativity",
+                    "target": "Dreaming",
+                    "color": "rgb(150, 150, 150)",
+                    "width": 6,
+                    "style": "solid"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            }
+        ]
+    }
+}
