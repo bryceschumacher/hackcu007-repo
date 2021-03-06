@@ -11,9 +11,7 @@ export class SurveyResponses extends React.Component {
     }
     render() {
         return (
-            <div>
-                <p>Survey Responseseee</p>
-            </div>
+            <p>Survey Responseseee</p>
         );
     }
 }
