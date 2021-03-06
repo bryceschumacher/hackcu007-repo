@@ -1,25 +1,112 @@
 import React from 'react';
 import {Home} from './Home.js'
 import {SurveyResponses} from './SurveyResponses.js'
+import './index.css'
+
 export class HomeWrapper extends React.Component {
+
     constructor(props) {
         super(props);
-        this.state = {main_content: 'home'};
+
+        this.state = {
+            main_content: 'home',
+        }
+
         this.changeMainContent = this.changeMainContent.bind(this);
     }
-    changeMainContent(new_content) {
-        this.setState({ main_content: new_content });
+
+    changeMainContent(content) {
+        this.setState({ main_content: content });
     }
+
     render() {
-        let content_displayed;
-        if(this.state.main_content == 'home') {
-            content_displayed = <Home />
+
+        let content;
+        if (this.state.main_content === 'home') {
+            content = <div><Home /></div>;
         }
-        else if(this.state.main_content == 'survey_responses') {
-            content_displayed = <SurveyResponses />
+        else if (this.state.main_content === 'survey_responses') {
+            content = <div><SurveyResponses /></div>;
         }
+        
         return (
-            <h1>Yo</h1>
+            //previously classname home
+            <div className="home-wrapper">
+                <Menu changeMainContent={this.changeMainContent} changeAuth={this.props.changeAuth} />
+                <div className="main-content">{content}</div>
+            </div>
         );
+    }
+
+
+}
+
+class Menu extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            selected: 0,
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(id, to) {
+        this.setState({ selected: id });
+        this.props.changeMainContent(to);
+        console.log(to);
+    }
+
+    render() {
+        return (
+            <>
+                <div class="nav">
+                    <div class="left-column">
+                        <div class="nav-wrapper">
+                            <img src=""></img>
+                            <MenuItem id={0} onClick={this.handleClick} text='Home' to='home' />
+                        </div>
+                        <div class="nav-wrapper">
+                            <img src=""></img>
+                            <MenuItem id={2} onClick={this.handleClick} text='Survey Responses' to='survey_responses' />
+                        </div>
+                    </div>
+                    <div class="right-column">
+                                    
+                    </div>
+                </div>
+
+            </>
+        );
+    }
+
+}
+
+class MenuItem extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.props.onClick(this.props.id, this.props.to);
+    }
+
+    render() {
+
+
+        return (
+			
+            <div className='menu-item-wrapper'>
+                <div className='menu-item'  onClick={this.handleClick}>
+                    <div className='menu-item-content'>
+                        <img src={this.props.src} className='menu-icon'></img>
+                        <div className='primary-text'>{this.props.text}</div>
+                    </div>
+                </div>
+            </div>
+			
+        )
     }
 }
