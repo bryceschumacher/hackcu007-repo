@@ -32,7 +32,7 @@ export class HomeWrapper extends React.Component {
         return (
             //previously classname home
             <div className="home-wrapper">
-                <Menu changeMainContent={this.changeMainContent} some_attribute = {this.state.main_content} changeAuth={this.props.changeAuth} />
+                <Menu changeMainContent={this.changeMainContent} some_attribute = {this.state.main_content} />
                 <div className="main-content">{content}</div>
             </div>
         );
@@ -95,15 +95,18 @@ class MenuItem extends React.Component {
         console.log(this.props.some_attribute_again);
         let selected_style;
         if(this.props.some_attribute_again == 'home') {
-            selected_style = {color: "white"}
+            selected_style = {
+                color: "white"
+
+            }
         }
         
         return (
 			
-            <div className='menu-item-wrapper'>
-                <div className='menu-item' style={selected_style} onClick={this.handleClick}>
-                    <div className='menu-item-content'>
-                        <div className='primary-text'>{this.props.text}</div>
+            <div class ='menu-item-wrapper'>
+                <div class ='menu-item' style={selected_style} onClick={this.handleClick}>
+                    <div class ='menu-item-content'>
+                        <div class ='primary-text'>{this.props.text}</div>
                     </div>
                 </div>
             </div>

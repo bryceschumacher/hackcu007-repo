@@ -10,8 +10,8 @@ export class SurveyResponses extends React.Component {
 
     }
     render() {
-        return (
-            <p>Survey Responseseee</p>
+        return(
+        <h1>yo</h1>
         );
     }
 }
