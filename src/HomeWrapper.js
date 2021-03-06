@@ -1,5 +1,6 @@
 import React from 'react';
-
+import {Home} from './Home.js'
+import {SurveyResponses} from './SurveyResponses.js'
 export class HomeWrapper extends React.Component {
     constructor(props) {
         super(props);
@@ -15,10 +16,10 @@ export class HomeWrapper extends React.Component {
             content_displayed = <Home />
         }
         else if(this.state.main_content == 'survey_responses') {
-            content_displayed = <SurveysResponses />
+            content_displayed = <SurveyResponses />
         }
         return (
-            
+            <h1>Yo</h1>
         );
     }
 }
