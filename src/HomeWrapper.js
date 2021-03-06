@@ -32,7 +32,7 @@ export class HomeWrapper extends React.Component {
         return (
             //previously classname home
             <div className="home-wrapper">
-                <Menu changeMainContent={this.changeMainContent} changeAuth={this.props.changeAuth} />
+                <Menu changeMainContent={this.changeMainContent} some_attribute = {this.state.main_content} changeAuth={this.props.changeAuth} />
                 <div className="main-content">{content}</div>
             </div>
         );
@@ -45,9 +45,6 @@ class Menu extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            selected: 0,
-        }
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -64,11 +61,11 @@ class Menu extends React.Component {
                     <div class="left-column">
                         <div class="nav-wrapper">
                             <img src=""></img>
-                            <MenuItem id={0} onClick={this.handleClick} text='Home' to='home' />
+                            <MenuItem id={0} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text='Home' to='home' />
                         </div>
                         <div class="nav-wrapper">
                             <img src=""></img>
-                            <MenuItem id={2} onClick={this.handleClick} text='Survey Responses' to='survey_responses' />
+                            <MenuItem id={2} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text='Survey Responses' to='survey_responses' />
                         </div>
                     </div>
                     <div class="right-column">
@@ -84,6 +81,7 @@ class Menu extends React.Component {
 
 class MenuItem extends React.Component {
 
+
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -94,14 +92,17 @@ class MenuItem extends React.Component {
     }
 
     render() {
-
-
+        console.log(this.props.some_attribute_again);
+        let selected_style;
+        if(this.props.some_attribute_again == 'home') {
+            selected_style = {color: "white"}
+        }
+        
         return (
 			
             <div className='menu-item-wrapper'>
-                <div className='menu-item'  onClick={this.handleClick}>
+                <div className='menu-item' style={selected_style} onClick={this.handleClick}>
                     <div className='menu-item-content'>
-                        <img src={this.props.src} className='menu-icon'></img>
                         <div className='primary-text'>{this.props.text}</div>
                     </div>
                 </div>
