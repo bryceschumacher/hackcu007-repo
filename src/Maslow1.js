@@ -23,102 +23,102 @@ export class Maslow1 extends React.Component {
               "isRequired": true,
               "choices": [
                {
-                "value": "father",
+                "value": "hydration-val",
                 "text": "Hydration"
                },
                {
-                "value": "mother",
+                "value": "salt-val",
                 "text": "Salt"
                },
                {
-                "value": "brother",
+                "value": "sugar-val",
                 "text": "Sugar"
                },
                {
-                "value": "sister",
+                "value": "protein-val",
                 "text": "Protein"
                },
                {
-                "value": "son",
+                "value": "fat-val",
                 "text": "Fat"
                },
                {
-                "value": "daughter",
+                "value": "calcium-val",
                 "text": "Calcium"
                }, {
-                "value": "daughter",
+                "value": "oxygen-val",
                 "text": "Oxygen"
                }, {
-                "value": "daughter",
+                "value": "ph-balance-val",
                 "text": "Ph Balance"
                }, {
-                "value": "daughter",
+                "value": "body-temp-val",
                 "text": "Body Temp"
                }, {
-                "value": "daughter",
+                "value": "job-val",
                 "text": "Job with Tenure"
                }, {
-                "value": "daughter",
+                "value": "savings-val",
                 "text": "Savings Account"
                }, {
-                "value": "daughter",
+                "value": "insurance-val",
                 "text": "Insurance"
                }, {
-                "value": "daughter",
+                "value": "physical-safety-val",
                 "text": "Physical Safety"
                }, {
-                "value": "daughter",
+                "value": "giving-attention-val",
                 "text": "Giving Attention"
                }, {
-                "value": "daughter",
+                "value": "receiving-affection-val",
                 "text": "Receiving Affection"
                }, {
-                "value": "daughter",
+                "value": "belonging-val",
                 "text": "Belonging"
                }, {
-                "value": "daughter",
+                "value": "friendship-val",
                 "text": "Friendship"
                }, {
-                "value": "daughter",
+                "value": "strength-val",
                 "text": "Strength"
                }, {
-                "value": "daughter",
+                "value": "acheivement-val",
                 "text": "Acheivement"
                }, {
-                "value": "daughter",
+                "value": "adequacy-val",
                 "text": "Adequacy"
                }, {
-                "value": "daughter",
+                "value": "confidence-val",
                 "text": "Confidence"
                }, {
-                "value": "daughter",
+                "value": "independence-val",
                 "text": "Independence"
                }, {
-                "value": "daughter",
+                "value": "freedom-val",
                 "text": "Freedom"
                }, {
-                "value": "daughter",
+                "value": "reputation-val",
                 "text": "Reputation"
                }, {
-                "value": "daughter",
+                "value": "prestige-val",
                 "text": "Prestige"
                }, {
-                "value": "daughter",
+                "value": "recognitition-val",
                 "text": "Recognition"
                }, {
-                "value": "daughter",
+                "value": "attention-val",
                 "text": "Attention"
                }, {
-                "value": "daughter",
+                "value": "importance-val",
                 "text": "Importance"
                }, {
-                "value": "daughter",
+                "value": "appreciation-val",
                 "text": "Appreciation"
                }, {
-                "value": "daughter",
+                "value": "creativity-val",
                 "text": "Creativity"
                }, {
-                "value": "daughter",
+                "value": "actualization-val",
                 "text": "Actualization"
                }
               ]
