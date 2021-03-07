@@ -37,7 +37,7 @@ export function Table3() {
               <TableCell>Counties Near Me</TableCell>
               <TableCell align="right">Money Spent/Week($)</TableCell>
               <TableCell align="right">Top Satisfier</TableCell>
-              <TableCell align="right">Happy With Their Habits(%)</TableCell>
+              <TableCell align="right">Content With Their Habits(%)</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

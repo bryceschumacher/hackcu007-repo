@@ -3,7 +3,6 @@ import logo from './benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 import {Maslow1} from './Maslow1.js'
 import {Maslow2} from './Maslow2.js'
 import {LoveLanguages} from './LoveLanguages.js'
-import { touches } from 'd3';
 export class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -52,7 +51,9 @@ export class Home extends React.Component {
                     </div>
                     <div class="scroll-container">
                         <div id="survey-main-content">
-                            <ChooseSchema changeSchema={this.changeSchema} />
+                            <div class="choose-schema-design">
+                                <ChooseSchema changeSchema={this.changeSchema} />
+                            </div>
                             <div class="here-are-the-surveys">{content}</div>
                         </div>
                     </div>
@@ -77,7 +78,7 @@ class ChooseSchema extends React.Component {
             <>
                 <div class="form-deciding-which-survey">
                     <form>
-                        <label for="schema_choice">Choose a Schema:</label>
+                        <label>Choose Schema</label>
                         <select name="schema_choice" id="cars" onChange={this.changeValueFunction}>
                             <option value="maslow1">Maslow 1943</option>
                             <option value="maslow2">Maslow 1943 Reduced</option>

@@ -49,7 +49,7 @@
     transition: border-bottom 0.1s;
 }
 .nav-wrapper:hover {
-    border-bottom: 0.125em solid rgb(204, 102, 255);
+    border-bottom: 0.125em solid black;
     padding-bottom: 3px;
 }
 
@@ -61,7 +61,8 @@
     z-index: 1;
 }
 #survey-main-content {
-    margin-top: 56vw;
+    margin-top: 60vw;
+    padding-bottom: 11vw;
 }
 
 .skip-section-div {
@@ -164,4 +165,16 @@ svg {
 
 .tables {
     margin-left: 14vw;
+}
+
+.choose-schema-design {
+    margin-bottom: 5vw;
+}
+
+.form-deciding-which-survey label {
+    font-size: 2vw;
+    font-family: 'Lato', sans-serif;
+}
+.form-deciding-which-survey select {
+    height: 2.5vw;
 }

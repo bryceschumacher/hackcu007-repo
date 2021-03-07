@@ -60,7 +60,6 @@ class Menu extends React.Component {
     handleClick(id, to) {
         this.setState({ selected: id });
         this.props.changeMainContent(to);
-        console.log(to);
     }
 
     render() {
@@ -104,9 +103,8 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        console.log(this.props.some_attribute_again);
         let selected_style;
-        if(this.props.some_attribute_again == 'home') {
+        if(this.props.some_attribute_again === 'home') {
             selected_style = {
                 color: "rgb(255, 255, 255)"
 

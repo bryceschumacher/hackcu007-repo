@@ -190,7 +190,7 @@ class ChooseMapShown extends React.Component {
             <>
                 <div class="form-deciding-which-survey2">
                     <form>
-                        <label for="schema_choice">Choose a Need to Show:</label>
+                        <label>Choose a Need to Show:</label>
                         <select name="schema_choice" id="cars" onChange={this.changeValueFunction}>
                             <option value="friendship">Friendship</option>
                             <option value="physical_safety">Physical Safety</option>
