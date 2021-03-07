@@ -33,7 +33,6 @@
     font-size: 1.5vw;
     color: white;
     margin-right: 2.5vw;
-    margin-top: 1vw;
 }
   
 .nav > .left-column > div {
@@ -41,6 +40,7 @@
     font-size: 1.5vw;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
+    margin-top: 0.5vw;
     
 }
   
@@ -61,7 +61,7 @@
     z-index: 1;
 }
 #survey-main-content {
-    margin-top: 55vw;
+    margin-top: 56vw;
 }
 
 .skip-section-div {
@@ -123,4 +123,8 @@
 .form-deciding-which-survey {
     margin-left: 39%;
 
+}
+
+svg g {
+    background-size: 200px 100px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Home} from './Home.js'
+import {Explore} from './Explore.js'
 import {SurveyResponses} from './SurveyResponses.js'
 import './index.css'
 
@@ -29,6 +30,9 @@ export class HomeWrapper extends React.Component {
         }
         else if (this.state.main_content === 'survey_responses') {
             content = <div><SurveyResponses /></div>;
+        }
+        else if (this.state.main_content === 'explore') {
+            content = <div><Explore /></div>
         }
         return (
             //previously classname home
@@ -61,12 +65,13 @@ class Menu extends React.Component {
                 <div class="nav">
                     <div class="left-column">
                         <div class="nav-wrapper">
-                            <img src=""></img>
                             <MenuItem id={0} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text='Home' to='home' />
                         </div>
                         <div class="nav-wrapper">
-                            <img src=""></img>
-                            <MenuItem id={2} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text='Survey Responses' to='survey_responses' />
+                            <MenuItem id={2} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text='Results' to='survey_responses' />
+                        </div>
+                        <div class="nav-wrapper">
+                            <MenuItem id={1} onClick={this.handleClick} some_attribute_again={this.props.some_attribute} text="Explore" to='explore' />
                         </div>
                     </div>
                     <div class="right-column">
