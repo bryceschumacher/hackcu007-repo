@@ -5,37 +5,52 @@
     scroll-behavior: smooth;
     z-index: 5;
 }
-  
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
   
   
 .nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 0.825vw;
-    padding-bottom: 2.625vw;
-    padding-left: 2.625vw;
     padding-right: 2.625vw;
+    padding-left: 3.625vw;
+    padding-top: 2.625vw;
     z-index: 5;
 }
 .left-column {
     display: flex;
 }
+.right-column {
+    display: flex;
+}
+.nav > .right-column > div {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin-right: 2.5vw;
+    margin-top: 1vw;
+}
   
 .nav > .left-column > div {
-    margin-right: 1.25vw;
+    margin-right: 1.75vw;
     font-size: 1.5vw;
     text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
     
 }
   
-.nav > .rightcolumn > div {
-    font-size: 1.2vw;
-}
-  
 .nav-wrapper {
-    height: 1.875em;
     border-bottom: 0.125em solid transparent;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 0.1s;
+}
+.nav-wrapper:hover {
+    border-bottom: 0.125em solid rgb(204, 102, 255);
+    padding-bottom: 3px;
 }
 
 .background-image {

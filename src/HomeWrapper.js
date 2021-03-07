@@ -18,7 +18,9 @@ export class HomeWrapper extends React.Component {
     changeMainContent(content) {
         this.setState({ main_content: content });
     }
-
+    changeTaco(new_word) {
+        this.setState({taco: new_word});
+    }
     render() {
 
         let content;
@@ -28,7 +30,6 @@ export class HomeWrapper extends React.Component {
         else if (this.state.main_content === 'survey_responses') {
             content = <div><SurveyResponses /></div>;
         }
-        
         return (
             //previously classname home
             <div className="home-wrapper">
@@ -69,7 +70,9 @@ class Menu extends React.Component {
                         </div>
                     </div>
                     <div class="right-column">
-                                    
+                        <div class="nav-wrapper2">
+                            ReSatisfy
+                        </div>
                     </div>
                 </div>
 
@@ -96,7 +99,7 @@ class MenuItem extends React.Component {
         let selected_style;
         if(this.props.some_attribute_again == 'home') {
             selected_style = {
-                color: "white"
+                color: "rgb(255, 255, 255)"
 
             }
         }

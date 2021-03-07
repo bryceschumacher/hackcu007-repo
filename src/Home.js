@@ -9,7 +9,7 @@ export class Home extends React.Component {
 
         this.state = {
             main_content:  'home',
-            schema_shown: 'maslow1'
+            schema_shown: 'maslow1',
         }
         this.changeSchema = this.changeSchema.bind(this);
     }
@@ -30,6 +30,11 @@ export class Home extends React.Component {
             return (
                 <>
                     <div class="background-image" style={{backgroundImage: `url(${logo})` , backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "60vw"}}>
+                    </div>
+                    <div class="text-in-background">
+                        <div class="quote-container">
+                            
+                        </div>
                     </div>
                     <div class="skip-section-div">
                         <section id="skip-section" class="skip-section-class">
