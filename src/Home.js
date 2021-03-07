@@ -18,14 +18,14 @@ export class Home extends React.Component {
     }
     render() {
         let content;
-        if(this.state.schema_shown == 'maslow1') {
-            content = <Maslow1 />
+        if(this.state.schema_shown === 'maslow1') {
+            content = <Maslow1 />;
         }
-        else if(this.state.schema_shown == 'maslow2') {
-            content = <Maslow2 />
+        else if(this.state.schema_shown === 'maslow2') {
+            content = <Maslow2 />;
         }
-        else if(this.state.schema_shown == 'love-languages') {
-            content = <LoveLanguages />
+        else if(this.state.schema_shown === 'love-languages') {
+            content = <LoveLanguages />;
         }
             return (
                 <>
@@ -51,11 +51,12 @@ export class Home extends React.Component {
 class ChooseSchema extends React.Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
+        this.changeValueFunction = this.changeValueFunction.bind(this);
+        this.state = {value: ''}
     }
-    handleClick(id, to) {
-        this.setState({ selected: id });
-        this.props.changeSchema(to);
+    changeValueFunction(event) {
+        this.setState({ value: event.target.value });
+        this.props.changeSchema(event.target.value);
     }
     render() {
         return (
@@ -63,12 +64,11 @@ class ChooseSchema extends React.Component {
                 <div class="form-deciding-which-survey">
                     <form>
                         <label for="schema_choice">Choose a Schema:</label>
-                        <select name="schema_choice" id="cars">
-                            <option value="maslow-1943" onSelect={this.handleClick} to="maslow1">Maslow 1943</option>
-                            <option value="maslow-1943-reduced" onSelect={this.handleClick} to="maslow2">Maslow 1943 Reduced</option>
-                            <option value="love-languages" onSelect={this.handleClick} to="love-languages">Love Languages</option>
+                        <select name="schema_choice" id="cars" onChange={this.changeValueFunction}>
+                            <option value="maslow1">Maslow 1943</option>
+                            <option value="maslow2">Maslow 1943 Reduced</option>
+                            <option value="love-languages">Love Languages</option>
                         </select>
-                        <input type="submit" value="Submit"></input>
                     </form>
                 </div>
             </>
