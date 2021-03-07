@@ -15,25 +15,29 @@ export class HomeWrapper extends React.Component {
 
         this.changeMainContent = this.changeMainContent.bind(this);
     }
+    
 
     changeMainContent(content) {
         this.setState({ main_content: content });
     }
-    changeTaco(new_word) {
-        this.setState({taco: new_word});
-    }
+
+
     render() {
 
         let content;
+
+
         if (this.state.main_content === 'home') {
             content = <div><Home /></div>;
         }
+
         else if (this.state.main_content === 'survey_responses') {
             content = <div><SurveyResponses /></div>;
         }
         else if (this.state.main_content === 'explore') {
             content = <div><Explore /></div>
         }
+
         return (
             //previously classname home
             <div className="home-wrapper">

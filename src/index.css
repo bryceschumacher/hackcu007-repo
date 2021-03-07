@@ -78,8 +78,6 @@
   }
   
   .skip-section-div a {
-    /*position: absolute;*/
-    /*bottom: 20px;*/
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -124,7 +122,46 @@
     margin-left: 39%;
 
 }
+.form-deciding-which-survey2 {
+    margin-left: 42%;
+    margin-top: 5vw;
 
-svg g {
-    background-size: 200px 100px;
+}
+
+
+svg {
+    margin-left: 35%;
+    margin-top: 1vw;
+}
+
+
+
+.heading-map {
+    margin-left: 37%;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+.disclaimer {
+    font-size: 0.75vw;
+    margin-left: 39%;
+}
+
+.map-and-table {
+    width: 100%;
+    display: block;
+}
+
+.heading-map-sub {
+    margin-left: 49%;
+    font-size: 1.5vw;
+}
+
+.heading-map-sub2 {
+    margin-top: 1vw;
+    margin-left: 49%;
+    font-size: 1.5vw;
+}
+
+.tables {
+    margin-left: 14vw;
 }

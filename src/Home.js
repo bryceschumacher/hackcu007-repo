@@ -3,6 +3,7 @@ import logo from './benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 import {Maslow1} from './Maslow1.js'
 import {Maslow2} from './Maslow2.js'
 import {LoveLanguages} from './LoveLanguages.js'
+import { touches } from 'd3';
 export class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +17,13 @@ export class Home extends React.Component {
     changeSchema(new_schema) {
         this.setState({ schema_shown: new_schema});
     }
+
+
+
     render() {
+
+    
+
         let content;
         if(this.state.schema_shown === 'maslow1') {
             content = <Maslow1 />;
@@ -27,6 +34,8 @@ export class Home extends React.Component {
         else if(this.state.schema_shown === 'love-languages') {
             content = <LoveLanguages />;
         }
+
+
             return (
                 <>
                     <div class="background-image" style={{backgroundImage: `url(${logo})` , backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "60vw"}}>
