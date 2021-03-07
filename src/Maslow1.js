@@ -169,7 +169,7 @@ export class Maslow1 extends React.Component {
              }
             ],
             "templateTitle": "Information about: {panel.relativeType}",
-            "panelCount": 2,
+            "panelCount": 1,
             "panelAddText": "Add Another Need Entry",
             "panelRemoveText": "Clear this need",
             "renderMode": "progressTop"
